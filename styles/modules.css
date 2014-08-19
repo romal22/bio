@@ -49,12 +49,35 @@ nav .logo {
     text-transform: uppercase;
     transition: padding 0.3s;
 }
+.l-sticky-header nav .logo {
+    display: inline-block;
+    height: 55px;
+    box-sizing: border-box;
+    padding: 17px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: padding 0.3s;
+}
 .nav-item{
-    padding: 15px;
-    border-bottom: 2px solid transparent;
-    font-size: 15px;
-    line-height: 53px;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
+
     transition: all 0.3s;
+}
+.nav-link{
+    border-bottom : 2px solid transparent;
+
+    line-height: 53px;
+    padding: 15px;
+    text-transform:uppercase;
+    text-decoration:none;
+
+
+}
+.l-sticky-header .nav-link{
+    border-bottom : 2px solid transparent;
+    transition: all 0.3s;
+    line-height: 35px;
+    padding: 9px 15px;
+    text-transform:uppercase;
+    text-decoration:none;
+
 }

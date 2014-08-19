@@ -10,7 +10,11 @@ $(document).ready(function(){
     //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
     $('#intro').parallax("49%", -1,false);
     jQuery('ul.sf-menu').superfish();
-
+    $('.sf-menu').waypoint('sticky');
+    $('#nav-bar').waypoint('sticky', {
+        wrapper: '<div class="sticky-wrapper" />',
+        stuckClass: 'l-sticky-header'
+    });
 
 
 })
