@@ -1,0 +1,47 @@
+.image-banner{
+    background-image: url('http://bitpublimedia.ro/themeforest/versus-resume/_content/backgrounds/1920x1280.jpg');
+    background-position:    49% -3px ;
+    background-repeat: no-repeat;
+}
+.wrap{
+    background: #ffffff;
+}
+.image-header{
+    border: 1px solid #ffffff;
+    font: 12px 'PT Sans', sans-serif;
+}
+.image-header h1{
+    font-size:72px;
+    line-height:53px;
+    color: #ffffff;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+.image-sub-text{
+ color: #fff;
+}
+
+.image-header:after{
+    border-bottom:1px solid #fff;
+}
+.image-header:before{
+    border-bottom:1px solid #fff;
+}
+
+nav .logo{
+    font: 17px/18px 'Oswald', sans-serif;
+    background-color: #252525;
+    color: #fff;
+}
+
+.sf-menu .nav-item,.sf-menu .nav-item:hover{
+    background: none;
+    font-family:'Oswald', sans-serif
+}
+.nav-item .nav-link{
+    color: #252525;
+}.nav-item .nav-link:hover{
+    color: #5f5f5f;
+}

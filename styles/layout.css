@@ -1,0 +1,20 @@
+.l-image-box{
+    min-height: 100vh;
+    display: block;
+
+}
+.l-relative{
+    position: relative;
+}
+.l-absolute{
+    position: absolute;
+}
+.l-text-center{
+    text-align: center;
+}
+
+
+
+.l-inline-block{
+    display: inline-block;
+}
