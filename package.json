@@ -8,6 +8,9 @@
     "grunt-contrib-clean": "*",
     "grunt-html-build": "*",
     "load-grunt-tasks": "*",
-    "grunt-contrib-copy": "~0.5.0"
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-less": "*",
+    "grunt-less-imports": "*",
+    "grunt-autoprefixer": "*"
   }
 }
