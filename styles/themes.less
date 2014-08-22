@@ -1,60 +1,137 @@
 @import "variables.less";
-.image-banner{
-    background-image: url('http://bitpublimedia.ro/themeforest/versus-resume/_content/backgrounds/1920x1280.jpg');
-    background-position:    49% -3px ;
-    background-repeat: no-repeat;
+
+.image-banner {
+  background-image: url('http://bitpublimedia.ro/themeforest/versus-resume/_content/backgrounds/1920x1280.jpg');
+  background-position: 49% -3px;
+  background-repeat: no-repeat;
 }
-.wrap{
-    background: @white;
+
+.wrap {
+  background: @white;
 }
-.image-header{
-    border: 1px solid @white;
-    font: 12px 'PT Sans', sans-serif;
+
+body {
+  color: @paragraphText;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.image-header h1{
-    font-size:72px;
-    line-height:53px;
+
+.image-header {
+  border: 1px solid @white;
+  font: 12px 'PT Sans', sans-serif;
+  &.personal-details-text {
+    border: 1px solid @personalDetailsText;;
+  }
+
+  h1 {
+    font-size: 72px;
+    line-height: 53px;
     color: @white;
-}
-h1{
-    font-family: 'Oswald', sans-serif;
-}
-
-.image-sub-text{
- color: #fff;
-}
-
-.image-header:after{
-    border-bottom:1px solid #fff;
-}
-.image-header:before{
-    border-bottom:1px solid #fff;
-}
-
-nav .logo{
-    font: 17px/18px 'Oswald', sans-serif;
-    background-color: @navLogo;
+  }
+  h1.personal-details-text {
+    font-size: 36px;
+    color: @personalDetailsText;
+  }
+  .image-sub-text {
     color: @white;
+  }
+  .image-sub-text.personal-details-text {
+    color: @personalDetailsText;
+    .text {
+      background-color: @white;
+    }
+  }
 }
 
-.sf-menu .nav-item,.sf-menu .nav-item:hover{
-    background: none;
-    font-family:'Oswald', sans-serif
-}
-.nav-item{
-    transition:background 0.2s;
-}
-.nav-item .nav-link{
-    color: @navLink;
-    font-size:15px;
-    transition: all 0.3s;
-    /*border-bottom-color:#252525;*/
-}
-.nav-item .nav-link:hover{
-    color: @navLinkHover;
+h1 {
+  font-family: 'Oswald', sans-serif;
 }
 
-.nav-container{
-    background: @white;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+.image-header:after {
+  border-bottom: 1px solid #fff;
+}
+
+.image-header:before {
+  border-bottom: 1px solid #fff;
+}
+
+nav .logo {
+  font: 17px/18px 'Oswald', sans-serif;
+  background-color: @navLogo;
+  color: @white;
+}
+
+.sf-menu .nav-item, .sf-menu .nav-item:hover {
+  background: none;
+  font-family: 'Oswald', sans-serif
+}
+
+.nav-item {
+  transition: background 0.2s;
+}
+
+.nav-item .nav-link {
+  color: @navLink;
+  font-size: 15px;
+  transition: all 0.3s;
+  /*border-bottom-color:#252525;*/
+}
+
+.nav-item .nav-link:hover {
+  color: @navLinkHover;
+}
+
+.nav-container {
+  background: @white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.personal-details-list {
+  list-style: none;
+  .detail-item {
+    border-bottom: 1px solid @personalDetailsItem;
+    color: @grayDarker;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+
+  }
+}
+
+p {
+  color: @personalDetailsParagraphText;
+}
+
+.job-detail {
+  font-size: 12px;
+  .year:after {
+
+    border-bottom: 1px solid @jobDetailBorder;
+
+  }
+  .job-title {
+    font-size: 18px;
+
+  }
+  .start-year,.end-year, .year-dash{
+    font-size: 36px;
+    font-family: Oswald, sans-serif;
+    color:@yearText;
+    line-height: 57px;
+    margin-bottom: 14px;
+  }
+}
+
+.job-description {
+  h3 {
+    font-size: 18px;
+  }
+  border-left: 1px solid @jobDetailBorder;
+}
+.company-experience{
+  border-bottom: 1px solid @jobDetailBorder;
+}
+.company-experience:last-child{
+  border-bottom: 0px ;
+}
+.work-ex{
+  background-color: @workExBackground;
 }

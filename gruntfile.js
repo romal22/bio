@@ -13,7 +13,7 @@ module.exports = function (grunt) {
                 tasks: ['htmlbuild','copy:main']
             },
             styles: {
-                files: ['styles/styles.less'],
+                files: ['styles/*.less'],
                 tasks: ['less', 'autoprefixer']
             }
 
@@ -52,7 +52,9 @@ module.exports = function (grunt) {
                 sections: {
                     header: 'templates/header.html',
                     navbar: 'templates/navbar.html',
-                    personalDetails: 'templates/personal_details.html'
+                    personalDetails: 'templates/personal_details.html',
+                    workExperience : 'templates/work_experience.html',
+                    education : 'templates/education.html'
                 }
             }
         },

@@ -8,12 +8,16 @@
     border-bottom:  none;
     position: relative;
 
-}
-.image-header h1{
+  h1{
     padding: 30px 40px 40px 40px;
     text-transform:uppercase;
-}
-.image-sub-text{
+  }
+  h1.personal-details-text{
+    padding: 10px 15px;
+    line-height:53px;
+  }
+
+  .image-sub-text{
     position: absolute;
     right: 0;
     left: 0;
@@ -22,7 +26,17 @@
     top:auto;
     font-size: 18px;
     bottom: -22px;
+  }
+  .image-sub-text.personal-details-text{
+    top:-10px;
+    bottom: auto;
+    .text{
+      padding: 0 10px;
+    }
+  }
+
 }
+
 .image-header:after{
     position: absolute;
     bottom: 0;
@@ -76,4 +90,40 @@ nav .logo {
     text-transform:uppercase;
     text-decoration:none;
 
+}
+
+.personal-details-list{
+  list-style:none;
+  .detail-item{
+    padding: 9px 0;
+  }
+}
+.company-experience{
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+}
+.job-detail{
+  padding-top: 15px;
+  text-align: right;
+  .year{
+    margin-top: 2px;
+    position: relative;
+    padding-bottom: 14px;
+    &:after{
+      position:absolute;
+      bottom:0px;
+      right:0px;
+      width:100px;
+      content: "";
+    }
+
+  }
+  .job-title{
+    font-size: 18px;
+    letter-spacing:1px;
+  }
+
+}
+.job-description {
+  padding-left: 25px;
 }
