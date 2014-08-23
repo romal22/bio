@@ -1,9 +1,22 @@
 @import "variables.less";
+@import "../bower_components/font-awesome/less/font-awesome.less";
 
 .image-banner {
-  background-image: url('http://bitpublimedia.ro/themeforest/versus-resume/_content/backgrounds/1920x1280.jpg');
+  background-image: url('../images/mac.jpg');
   background-position: 49% -3px;
   background-repeat: no-repeat;
+  background-size: 100%;
+}
+.parallax-overlay{
+  background-image: url('../images/pattern.png');
+  background-repeat: repeat;
+
+}
+.contact-banner {
+  background-image: url('../images/howrah.jpg');
+  background-position: 84% 50%;
+  background-repeat: no-repeat;
+
 }
 
 .wrap {
@@ -13,6 +26,10 @@
 body {
   color: @paragraphText;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  .set-headers(@defaultHeading);
+  h2{
+    font-size: 24px;
+  }
 }
 
 .image-header {
@@ -38,6 +55,9 @@ body {
     color: @personalDetailsText;
     .text {
       background-color: @white;
+    }
+    .text.alternate-bg{
+      background-color: @alternateBackground;
     }
   }
 }
@@ -132,8 +152,8 @@ p {
 .company-experience:last-child{
   border-bottom: 0px ;
 }
-.work-ex{
-  background-color: @workExBackground;
+.alternate-bg{
+  background-color: @alternateBackground;
 }
 .progress{
   background-color: @progressBackground;
@@ -157,4 +177,29 @@ ul.checked-list{
 
 .img-thumbnail{
   .sharp-borders;
+}
+
+.contact-options{
+
+  .set-headers(@contactOptions);
+}
+
+.set-headers(@color){
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: @color;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+  }
+}
+.icon-block{
+  background: @iconBlockBackground;
+}
+.address-line{
+  font-family:'PT Sans Narrow', sans-serif;
+  letter-spacing:1px;
 }

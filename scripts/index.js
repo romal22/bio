@@ -15,7 +15,21 @@ $(document).ready(function(){
         wrapper: '<div class="sticky-wrapper" />',
         stuckClass: 'l-sticky-header'
     });
+
+    $('#superfish-menu').superfish({
+        delay: 100,
+        animation: {opacity:'show',height:'show'},
+        speed: 100,
+        cssArrows: false
+    });
     $('#myStat2').circliful();
+    $('#contact-bg').each(function() {
+
+        var $t = $(this);
+        $t.addClass("parallax-enabled");
+        $t.parallax("84%", -0.8, true);
+
+    });
 
 
 })

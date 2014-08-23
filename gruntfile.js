@@ -57,7 +57,7 @@ module.exports = function (grunt) {
                     education : 'templates/education.html',
                     skills : 'templates/skills.html',
                     portfolio : 'templates/portfolio.html',
-                    contact : 'templates/portfolio.html'
+                    contact : 'templates/contact.html'
                 }
             }
         },

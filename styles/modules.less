@@ -5,6 +5,7 @@
     margin-top: -65px;
 }
 .image-header{
+    z-index: 3;
     border-bottom:  none;
     position: relative;
 
@@ -71,6 +72,7 @@ nav .logo {
     text-transform: uppercase;
     transition: padding 0.3s;
 }
+
 .nav-item{
 
     transition: all 0.3s;
@@ -101,6 +103,10 @@ nav .logo {
 .company-experience{
   padding-bottom: 50px;
   margin-bottom: 60px;
+  &:last-child{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
 }
 .job-detail{
   padding-top: 15px;
@@ -143,4 +149,36 @@ nav .logo {
 }
 .checked-list{
   padding-left: 0px;
+}
+
+
+.contact{
+  padding-top: 60px;
+  .contact-options{
+    color: @contactOptions;
+    margin-top: 60px;
+  }
+
+}
+.icon-block{
+ height: 30px;
+  width: 30px;
+  padding-top: 2px;
+  text-align: center;
+  i{
+    vertical-align: middle;
+    text-align: center;
+  }
+  margin-right: 20px;
+}
+.parallax-overlay{
+  position: absolute;
+  top:0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index:2;
+  background-attachment: scroll;
+  background-repeat: repeat;
+  background-position:0 0;
 }

@@ -9,7 +9,8 @@
     "superfish": "*",
     "jquery-waypoints": "*",
      "viewport": "git://github.com/tuupola/jquery_viewport",
-      "circliful":"*"
+      "circliful":"*",
+      "font-awesome": "4.1.0"
   },
   "resolutions": {
     "jquery": "~1.11.1"
