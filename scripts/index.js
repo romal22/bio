@@ -15,6 +15,7 @@ $(document).ready(function(){
         wrapper: '<div class="sticky-wrapper" />',
         stuckClass: 'l-sticky-header'
     });
+    $('#myStat2').circliful();
 
 
 })

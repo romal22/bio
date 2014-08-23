@@ -54,7 +54,10 @@ module.exports = function (grunt) {
                     navbar: 'templates/navbar.html',
                     personalDetails: 'templates/personal_details.html',
                     workExperience : 'templates/work_experience.html',
-                    education : 'templates/education.html'
+                    education : 'templates/education.html',
+                    skills : 'templates/skills.html',
+                    portfolio : 'templates/portfolio.html',
+                    contact : 'templates/portfolio.html'
                 }
             }
         },

@@ -8,7 +8,8 @@
     "bxslider-4": "*",
     "superfish": "*",
     "jquery-waypoints": "*",
-     "viewport": "git://github.com/tuupola/jquery_viewport"
+     "viewport": "git://github.com/tuupola/jquery_viewport",
+      "circliful":"*"
   },
   "resolutions": {
     "jquery": "~1.11.1"
