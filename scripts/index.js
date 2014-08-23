@@ -27,7 +27,7 @@ $(document).ready(function(){
 
         var $t = $(this);
         $t.addClass("parallax-enabled");
-        $t.parallax("84%", -0.8, true);
+        $t.parallax("84%", -0.5, true);
 
     });
 
