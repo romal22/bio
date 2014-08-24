@@ -10,7 +10,8 @@
     "jquery-waypoints": "*",
      "viewport": "git://github.com/tuupola/jquery_viewport",
       "circliful":"*",
-      "font-awesome": "4.1.0"
+      "font-awesome": "4.1.0",
+      "lodash":"*"
   },
   "resolutions": {
     "jquery": "~1.11.1"
