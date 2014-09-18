@@ -10,7 +10,7 @@
         this.id = "#contact";
         this.nav = ".contact";
         this.$contactBg = $('#contact');
-        this.$contactBg.parallax("84%", -0.5, false);
+        this.$contactBg.parallax("50%", 0.099, false);
     }
     Contact.prototype = (function(){
         function scrolled(){
