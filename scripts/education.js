@@ -8,11 +8,13 @@
     function Education(){
 
         this.id = "#education";
+        this.nav = ".education";
 
     }
     Education.prototype = (function(){
         function scrolled(){
-
+            $('.active').removeClass('active');
+            $(this.nav).addClass('active');
         }
         var fn = {
             scrolled:scrolled

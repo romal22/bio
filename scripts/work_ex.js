@@ -9,11 +9,13 @@
     function WorkEx(){
 
         this.id = "#work_ex";
+        this.nav = ".work-ex";
 
     }
     WorkEx.prototype = (function(){
         function scrolled(){
-
+            $('.active').removeClass('active');
+            $(this.nav).addClass('active');
         }
         var fn = {
             scrolled:scrolled

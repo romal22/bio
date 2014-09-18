@@ -8,11 +8,13 @@
     function PersonalDetails(){
 
         this.id = "#personal_details";
+        this.nav = ".personal-details";
 
     }
     PersonalDetails.prototype = (function(){
         function scrolled(){
-
+            $('.active').removeClass('active');
+            $(this.nav).addClass('active');
         }
         var fn = {
             scrolled:scrolled

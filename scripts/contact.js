@@ -8,12 +8,14 @@
     function Contact(){
 
         this.id = "#contact";
+        this.nav = ".contact";
         this.$contactBg = $('#contact');
         this.$contactBg.parallax("84%", -0.5, false);
     }
     Contact.prototype = (function(){
         function scrolled(){
-
+            $('.active').removeClass('active');
+            $(this.nav).addClass('active');
         }
         var fn = {
             scrolled:scrolled

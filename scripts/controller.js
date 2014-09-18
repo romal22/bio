@@ -42,9 +42,7 @@
 
         }
         function onScroll(id,page,direction){
-           if(direction === "down"){
-               this.page[page].scrolled();
-           }
+            this.page[page].scrolled(direction);
         }
         return {
             intitialize:intitialize
@@ -62,5 +60,6 @@
             workEx:window.pageController.workEx
         }
     );
+
 
 })(window, _);

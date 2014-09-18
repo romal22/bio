@@ -9,8 +9,22 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css">
     <link href="bower_components/superfish/dist/css/superfish.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Oswald' rel='stylesheet' type='text/css'>
+   <script>
+       window.onload=function(){
+           $('#loader').hide();
+
+           $('#main_content').show();
+       }
+   </script>
 </head>
 <body>
+<div id="loader" class="loader_style">
+    <span class="center">
+        <i class="fa fa-spinner fa-spin fa-2x"></i>
+        <h3>Loading....</h3>
+    </span>
+</div>
+<div id="main_content" style="display: none">
 <header id="landing_page">
     <section id="intro" class="parallax-image l-image-box image-banner l-relative">
         <div class="parallax-overlay"></div>
@@ -36,25 +50,22 @@
             </div>
             <div class="col-lg-9">
                 <ul class="sf-menu" id="superfish-menu">
-                    <li class="active nav-item">
+                    <li class="nav-item personal-details">
                         <a class="nav-link" href="#personal-profile">Personal Details</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work-experience">Experience</a>
+                    <li class="nav-item work-ex">
+                        <a class="nav-link" href="#work_ex">Experience</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item education">
                         <a class="nav-link" href="#education">Education</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#references">References</a>
+                    <li class="nav-item skills">
+                        <a class="nav-link" href="#knowledge">Skills</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                    <li class="nav-item portfolio">
+                        <a class="nav-link " href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item contact">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -62,12 +73,11 @@
         </div>
     </nav>
 </div>
+    <div id="content" class="wrap">
 
-<div class="wrap">
-
-    <div class="wrap" id="personal_details">
-        <div class="container ">
-<div class="row">
+        <div class="wrap" id="personal_details">
+            <div class="container ">
+<div class="row" id="personal-profile">
     <div class="col-lg-12">
 
         <div class="personal-details l-gap-section-above l-gap-section-below text-center">
@@ -97,8 +107,8 @@
             <li class="detail-item">Address: Bangalore </li>
             <li class="detail-item">Phone: +91 9945116525 </li>
             <li class="detail-item">
-                Email:
-                <a href="mailto:abhik.mitra@live.com">abhik.mitra@live.com</a>
+                Blog:
+                <a href="https://iamabhik.wordpress.com">iamabhik.wordpress.com</a>
             </li>
         </ul>
 
@@ -114,10 +124,10 @@
     </div>
 
 </div>
+            </div>
         </div>
-    </div>
-    <div class="wrap alternate-bg l-pb50 l-mb60" id="work_ex">
-        <div class="container ">
+        <div class="wrap alternate-bg l-pb50 l-mb60" id="work_ex">
+            <div class="container ">
 <div class="row">
     <div class="col-lg-12">
 
@@ -159,7 +169,7 @@
 
             </div>
             <h3 class="job-title">
-                <a href="seller.flipkart.com">Flipkart.com</a>
+                <a href="http://seller.flipkart.com">Flipkart.com</a>
             </h3>
             <div class="sub-roles">
                 <span>Seller Platform</span>
@@ -171,7 +181,7 @@
         <div class="job-description">
                 <h3>JOB DESCRIPTION</h3>
             <div>
-                <div class="job-desc-title">Javascript Engineer</div>
+                <div class="job-desc-title">Senior UI Engineer ( UI II )</div>
                 <div class="job-desc-details">
                    Building the Flipkart Seller Portal.My primary responsibility is to build a scalable UI stack using Angular and Node. I work with extensively with Angular building the generic components for the UI, and optimizing the web app performance. I write services in Node JS that feed data to the UI.We use LESS for CSS, and our build process consists of grunt and bower.
                 </div>
@@ -202,7 +212,7 @@
 
             </div>
             <h3 class="job-title">
-                <a href="seller.flipkart.com">Infosys Limited</a>
+                <a href="http://infosys.com">Infosys Limited</a>
             </h3>
             <div class="sub-roles">
                 <span>Location Based Services,Infosys Labs</span>
@@ -222,10 +232,10 @@
         </div>
     </div>
 </div>
+            </div>
         </div>
-    </div>
-    <div class="wrap l-pb50 l-mb60" id="education">
-        <div class="container">
+        <div class="wrap l-pb50 l-mb60" id="education">
+            <div class="container">
 <div class="row">
     <div class="col-lg-12">
 
@@ -289,10 +299,10 @@
     </div>
 </div>
 
+            </div>
         </div>
-    </div>
-    <div class="wrap alternate-bg l-pb50 l-mb60" id="knowledge">
-        <div class="container">
+        <div class="wrap alternate-bg l-pb50 l-mb60" id="knowledge">
+            <div class="container">
 <div class="row">
     <div class="col-lg-12">
 
@@ -439,10 +449,10 @@
 </div>
 
 
+            </div>
         </div>
-    </div>
-    <div class="wrap l-pb50 l-mb60" id="portfolio">
-        <div class="container">
+        <div class="wrap l-pb50 l-mb60" id="portfolio">
+            <div class="container">
 <div class="row">
     <div class="col-lg-12">
 
@@ -463,36 +473,55 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="row work-items" >
-            <div class="col-lg-3">
+            <div class="col-lg-4">
+               <a href="https://github.com/abhikmitra/ng-joyride">
+                   <div class="item-preview">
+                       <img src="https://camo.githubusercontent.com/a2eb143de141c7951e5b6dcae1f60ad0c5a99434/687474703a2f2f6f6935392e74696e797069632e636f6d2f3275376f6d64642e6a7067" alt="..." class="img-thumbnail">
+                   </div>
+               </a>
+               <div>
+                   <br/>
+                   <a href="https://github.com/abhikmitra/ng-joyride">
+                       Ng Joyride
+                   </a>
+               </div>
+            </div>
+            <div class="col-lg-4">
+                <a href="https://github.com/abhikmitra/angular-poller">
+                    <div class="item-preview">
+                        <img src="images/angularPoller.png" alt="..." class="img-thumbnail">
+                    </div>
+                </a>
+                <div>
+                    <br/>
+                    <a href="https://github.com/abhikmitra/angular-poller">
+                        Ng Poller
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
                 <div class="item-preview">
-                    <img src="images/me.jpg" alt="..." class="img-thumbnail">
+                    <img src="images/serviceFactory.png" alt="..." class="img-thumbnail">
+                </div>
+                <div>
+                    <br/>
+                    <a href="https://github.com/abhikmitra/Service-vs-Factory">
+                       Service & Factory
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="item-preview">
-                    <img src="images/me.jpg" alt="..." class="img-thumbnail">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="item-preview">
-                    <img src="images/me.jpg" alt="..." class="img-thumbnail">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="item-preview">
-                    <img src="images/me.jpg" alt="..." class="img-thumbnail">
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
 
 
+            </div>
         </div>
-    </div>
-    <div id="contact" class="contact-banner parallax-image position-relative">
-        <div class="parallax-overlay"></div>
-        <div class="wrap contact bg-transparent l-pb50">
+        <div id="contact" class="contact-banner parallax-image position-relative">
+            <div class="parallax-overlay"></div>
+            <div class="wrap contact bg-transparent l-pb50">
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -508,38 +537,52 @@
     <div class="row contact-options">
         <div class="col-lg-4 text-center l-zi2">
             <h4>GET IN TOUCH</h4>
+
+            <div class="address-line l-mt30">
+                Feel free to contact me during working hours .
+
+
+            </div>
         </div>
         <div class="col-lg-4 l-zi2">
             <h4>VARIOUS NETWORKS</h4>
             <div class="address-line l-mt30">
-                <span class="l-inline-block icon-block"> <i class="fa fa-github"></i></span>
-                Github profile
+                <a href="https://github.com/abhikmitra">
+                    <span class="l-inline-block icon-block"> <i class="fa fa-github"></i></span>
+                    Github profile
+                </a>
 
 
             </div>
             <div class="address-line l-mt30">
-                <span class="l-inline-block icon-block"> <i class="fa fa-facebook"></i></span>
-                Facebook profile
+                <a href="https://www.facebook.com/abhik.mitra">
+                    <span class="l-inline-block icon-block"> <i class="fa fa-facebook"></i></span>
+                    Facebook profile
+                </a>
 
 
             </div>
             <div class="address-line l-mt30">
-                <span class="l-inline-block icon-block"> <i class="fa fa-twitter"></i></span>
-                Twitter Profile
+                <a href="https://twitter.com/complanCoder">
+                    <span class="l-inline-block icon-block"> <i class="fa fa-twitter"></i></span>
+                    Twitter Profile
+                </a>
+
+            </div>
+            <div class="address-line l-mt30">
+                <a href="http://in.linkedin.com/in/iamabhik">
+                    <span class="l-inline-block icon-block"> <i class="fa fa-linkedin"></i></span>
+                    LinkedIn Profile
+                </a>
+
 
 
             </div>
             <div class="address-line l-mt30">
-                <span class="l-inline-block icon-block"> <i class="fa fa-linkedin"></i></span>
-                LinkedIn Profile
-
-
-            </div>
-            <div class="address-line l-mt30">
-                <span class="l-inline-block icon-block"> <i class="fa fa-google-plus"></i></span>
-                Google Plus
-
-
+                <a href="https://plus.google.com/u/1/+AbhikMitra/posts">
+                    <span class="l-inline-block icon-block"> <i class="fa fa-google-plus"></i></span>
+                    Google Plus
+                </a>
             </div>
 
         </div>
@@ -547,19 +590,19 @@
             <h4>MY ADDRESS</h4>
             <div class="address-line l-mt30">
                 <span class="l-inline-block icon-block"> <i class="glyphicon glyphicon-home"></i></span>
-                    Kestopur, Kolkata
+                    Koramangala, Bangalore
 
 
             </div>
             <div class="address-line l-mt30">
                 <span class="l-inline-block icon-block"> <i class="glyphicon glyphicon-earphone"></i></span>
-                    Kestopur, Kolkata
+                    +91 9945116525
 
 
             </div>
             <div class="address-line l-mt30">
                 <span class="l-inline-block icon-block"> <i class="glyphicon glyphicon-envelope"></i></span>
-                    Kestopur, Kolkata
+                   <a href="mailto:abhik.mitra@live.com?Subject=Hello%20Abhik">abhik.mitra@live.com</a>
 
 
             </div>
@@ -568,11 +611,15 @@
 
 </div>
 
+            </div>
         </div>
+
+
     </div>
-
-
 </div>
+
+
+
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="bower_components/lodash/dist/lodash.min.js"></script>
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

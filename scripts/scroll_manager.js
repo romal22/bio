@@ -14,6 +14,7 @@
             var self = this;
             this.pages.forEach(function(element, index, array){
                 $(element.id).waypoint(function(direction){
+                   
                     onScrollFn(element.id,element.page,direction);
                 });
             });

@@ -14,6 +14,7 @@
             $('#jsStat2')
         ];
         this.$circles = $("#skills-donut");
+        this.nav = ".skills";
         var self = this;
         this.$circles.waypoint(
             {
@@ -23,11 +24,16 @@
         );
         var circleRendered = false;
         function renderCircles(direction){
+            if(circleRendered == undefined){
+                return;
+            }
             if(direction === "down" && !circleRendered){
+
                 self.$statEls.forEach(function (element, index) {
                     element.circliful();
 
                 });
+
                 circleRendered = true;
             }
 
@@ -37,7 +43,8 @@
     }
     Knowledge.prototype = (function(){
         function scrolled(){
-
+            $('.active').removeClass('active');
+            $(this.nav).addClass('active');
 
 
         }
