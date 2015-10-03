@@ -17,7 +17,7 @@
     })();
     var code = urlParams["code"];
     var url = "https://app.vssps.visualstudio.com/oauth2/token" +
-        "?client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer" +
+
         "&client_assertion="+ secret +
         "&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer" +
         "&assertion=" + code +
