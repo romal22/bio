@@ -39,8 +39,8 @@
             window.location =
             "https://abhikmitra.github.io/token_received?access_token="
             + data["access_token"]
-            + "expires_in="+data["expires_in"]+
-            + "refresh_token=" +data["refresh_token"];
+            + "&expires_in="+data["expires_in"]+
+            + "&refresh_token=" +data["refresh_token"];
         }
     })
 
