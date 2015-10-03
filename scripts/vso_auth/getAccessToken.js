@@ -29,8 +29,8 @@
         code +
         "&redirect_uri=https://abhikmitra.github.io/loggedin";
     $.ajax({
-        method: "https://app.vssps.visualstudio.com/oauth2/token",
-        url: url,
+        method: "POST",
+        url: "https://app.vssps.visualstudio.com/oauth2/token",
         data: postData,
         contentType: 'application/x-www-form-urlencoded',
         error:function(){
