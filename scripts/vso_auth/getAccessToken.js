@@ -25,7 +25,7 @@
     $.ajax({
         method: "POST",
         url: url,
-        data: { name: "John", location: "Boston" },
+        contentType: 'application/x-www-form-urlencoded',
         error:function(){
             debugger;
         },
