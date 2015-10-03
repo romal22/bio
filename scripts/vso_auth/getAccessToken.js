@@ -18,7 +18,7 @@
     var code = urlParams["code"];
     var url = "https://app.vssps.visualstudio.com/oauth2/token?" +
 
-        "&client_assertion="+ secret +
+        "client_assertion="+ secret +
         "&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer" +
         "&assertion=" + code +
         "&redirect_uri=https://abhikmitra.github.io/loggedin"
