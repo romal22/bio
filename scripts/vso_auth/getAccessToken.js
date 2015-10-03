@@ -16,7 +16,7 @@
             urlParams[decode(match[1])] = decode(match[2]);
     })();
     var code = urlParams["code"];
-    var url = "https://app.vssps.visualstudio.com/oauth2/token" +
+    var url = "https://app.vssps.visualstudio.com/oauth2/token?" +
 
         "&client_assertion="+ secret +
         "&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer" +
