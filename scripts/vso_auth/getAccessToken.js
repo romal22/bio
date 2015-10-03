@@ -16,15 +16,22 @@
             urlParams[decode(match[1])] = decode(match[2]);
     })();
     var code = urlParams["code"];
-    var url = "https://app.vssps.visualstudio.com/oauth2/token?" +
-
-        "client_assertion="+ secret +
+    var url = "https://app.vssps.visualstudio.com/oauth2/token" +
+        "?client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer" +
+        "&client_assertion="+ secret +
         "&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer" +
         "&assertion=" + code +
         "&redirect_uri=https://abhikmitra.github.io/loggedin"
+    var postData =
+        "client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion=" +
+        secret +
+        "&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=" +
+        code +
+        "&redirect_uri=https://abhikmitra.github.io/loggedin";
     $.ajax({
-        method: "POST",
+        method: "https://app.vssps.visualstudio.com/oauth2/token",
         url: url,
+        data: postData,
         contentType: 'application/x-www-form-urlencoded',
         error:function(){
             debugger;
