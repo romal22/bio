@@ -25,14 +25,15 @@
     var url = "https://app.vssps.visualstudio.com/oauth2/token" +
         "?client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer" +
         "&client_assertion="+ secret +
-        "&grant_type=" + grant_type
+        "&grant_type=" + grant_type +
         "&assertion=" + code +
         "&redirect_uri=https://abhikmitra.github.io/loggedin"
     var postData =
         "client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion=" +
         secret +
         "&grant_type=" + grant_type +
-         "&assertion=" + code +
+            "&assertion=" +
+        code +
         "&redirect_uri=https://abhikmitra.github.io/loggedin";
     $.ajax({
         method: "POST",
@@ -48,7 +49,26 @@
             "https://abhikmitra.github.io/token_received?access_token="
             + data["access_token"]
             + "&expires_in="+data["expires_in"] + "&refresh_token=" +data["refresh_token"];
+            debugger;
+            getTeams(data["access_token"]);
         }
     })
+    function getTeams(accessToken){
+        $.ajax({
+            method: "GET",
+            url: "https://app.vssps.visualstudio.com/oauth2/token",
+            data: postData,
+            contentType: 'application/x-www-form-urlencoded',
+            headers:{
+                authorization: "bearer " + accessToken
+            },
+            error:function(error){
+                console.log(error)
+            },
+            success:function(data){
+                console.log(data)
 
+            }
+        });
+    }
 }(window));
