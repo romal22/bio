@@ -31,7 +31,7 @@
     var postData =
         "client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion=" +
         secret +
-        "&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=" +
+        "&grant_type=" + grant_type +
         code +
         "&redirect_uri=https://abhikmitra.github.io/loggedin";
     $.ajax({
