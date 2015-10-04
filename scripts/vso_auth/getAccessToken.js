@@ -32,7 +32,7 @@
         "client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion=" +
         secret +
         "&grant_type=" + grant_type +
-        code +
+         "&assertion=" + code +
         "&redirect_uri=https://abhikmitra.github.io/loggedin";
     $.ajax({
         method: "POST",
