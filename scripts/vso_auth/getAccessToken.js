@@ -16,10 +16,15 @@
             urlParams[decode(match[1])] = decode(match[2]);
     })();
     var code = urlParams["code"];
+    var grant_type =  "urn:ietf:params:oauth:grant-type:jwt-bearer"
+    if(urlParams["refresh"]){
+        grant_type =  "refresh_token"
+    }
+
     var url = "https://app.vssps.visualstudio.com/oauth2/token" +
         "?client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer" +
         "&client_assertion="+ secret +
-        "&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer" +
+        "&grant_type=" + grant_type
         "&assertion=" + code +
         "&redirect_uri=https://abhikmitra.github.io/loggedin"
     var postData =
