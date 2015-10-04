@@ -34,6 +34,8 @@
         data: postData,
         contentType: 'application/x-www-form-urlencoded',
         error:function(){
+            window.location =
+                "https://abhikmitra.github.io/error"
         },
         success:function(data){
             window.location =
