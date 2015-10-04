@@ -59,7 +59,7 @@
             url: "https://olsapps.visualstudio.com/_apis/projects?api-version=1.0&stateFilter=All",
             contentType: 'application/x-www-form-urlencoded',
             headers:{
-                authorization: "bearer " + accessToken
+                Authorization: "bearer " + accessToken
             },
             error:function(error){
                 console.log(error)
