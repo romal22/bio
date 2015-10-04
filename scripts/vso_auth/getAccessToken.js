@@ -56,8 +56,7 @@
     function getTeams(accessToken){
         $.ajax({
             method: "GET",
-            url: "https://app.vssps.visualstudio.com/oauth2/token",
-            data: postData,
+            url: "https://olsapps.visualstudio.com/_apis/projects?api-version=1.0&stateFilter=All",
             contentType: 'application/x-www-form-urlencoded',
             headers:{
                 authorization: "bearer " + accessToken
