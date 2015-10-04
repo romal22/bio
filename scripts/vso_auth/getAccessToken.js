@@ -16,7 +16,8 @@
             urlParams[decode(match[1])] = decode(match[2]);
     })();
     var code = urlParams["code"];
-    var grant_type =  "urn:ietf:params:oauth:grant-type:jwt-bearer"
+    var grant_type =  "urn:ietf:params:oauth:grant-type:jwt-bearer";
+    debugger;
     if(urlParams["refresh"]){
         grant_type =  "refresh_token"
     }
