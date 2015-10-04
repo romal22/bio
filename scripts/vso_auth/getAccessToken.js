@@ -45,10 +45,10 @@
                 "https://abhikmitra.github.io/error"
         },
         success:function(data){
-            window.location =
-            "https://abhikmitra.github.io/token_received?access_token="
-            + data["access_token"]
-            + "&expires_in="+data["expires_in"] + "&refresh_token=" +data["refresh_token"];
+            // window.location =
+            // "https://abhikmitra.github.io/token_received?access_token="
+            // + data["access_token"]
+            // + "&expires_in="+data["expires_in"] + "&refresh_token=" +data["refresh_token"];
             debugger;
             getTeams(data["access_token"]);
         }
