@@ -56,7 +56,7 @@
     function getTeams(accessToken){
         $.ajax({
             method: "GET",
-            url: "https://olsapps.visualstudio.com/_apis/projects?api-version=1.0&stateFilter=All",
+            url: "https://olsapps.visualstudio.com/defaultConnection/Groupies/_apis/build/builds?api-version=2.0",
             contentType: 'application/x-www-form-urlencoded',
             headers:{
                 Authorization: "Bearer " + accessToken
